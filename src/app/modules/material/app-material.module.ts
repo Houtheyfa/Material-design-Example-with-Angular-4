@@ -1,25 +1,25 @@
 import {NgModule} from '@angular/core';
 import {
-  MdButtonModule, MdCardModule, MdGridListModule,
-  MdIconModule, MdInputModule, MdListModule, MdMenuModule, MdSidenavModule, MdSnackBarModule, MdTabsModule,
-  MdToolbarModule,
-  MdTooltipModule
+  MatButtonModule, MatCardModule, MatGridListModule,
+  MatIconModule, MatInputModule, MatListModule, MatMenuModule, MatSidenavModule, MatSnackBarModule, MatTabsModule,
+  MatToolbarModule,
+  MatTooltipModule
 } from '@angular/material';
 
 @NgModule({
   imports: [
-    MdTooltipModule,
-    MdInputModule,
-    MdSidenavModule,
-    MdGridListModule,
-    MdSnackBarModule
+    MatTooltipModule,
+    MatInputModule,
+    MatSidenavModule,
+    MatGridListModule,
+    MatSnackBarModule
   ],
   exports: [
-    MdTooltipModule,
-    MdInputModule,
-    MdSidenavModule,
-    MdGridListModule,
-    MdSnackBarModule
+    MatTooltipModule,
+    MatInputModule,
+    MatSidenavModule,
+    MatGridListModule,
+    MatSnackBarModule
   ]
 })
 export class AppMaterialModule {

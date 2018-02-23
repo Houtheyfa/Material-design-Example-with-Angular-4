@@ -1,25 +1,25 @@
-<md-nav-list>
-  <md-list-item>
-    <md-icon>home</md-icon>
-    <a md-line routerLink="home">Home</a>
-  </md-list-item>
+<mat-nav-list>
+  <mat-list-item>
+    <mat-icon>home</mat-icon>
+    <a mat-line routerLink="home">Home</a>
+  </mat-list-item>
 
-  <md-list-item>
-    <a md-line routerLink="works">My work</a>
-    <button md-icon-button [mdMenuTriggerFor]="menu">
-      <md-icon>more_vert</md-icon>
+  <mat-list-item>
+    <a mat-line routerLink="works">My work</a>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
     </button>
-    <md-menu #menu="mdMenu">
-      <a md-menu-item routerLink="works/learn">Learn</a>
-      <a md-menu-item routerLink="works/create">Create</a>
-      <a md-menu-item routerLink="works/last-session">Last session</a>
-    </md-menu>
-  </md-list-item>
+    <mat-menu #menu="matMenu">
+      <a mat-menu-item routerLink="works/learn">Learn</a>
+      <a mat-menu-item routerLink="works/create">Create</a>
+      <a mat-menu-item routerLink="works/last-session">Last session</a>
+    </mat-menu>
+  </mat-list-item>
 
 
 
-  <md-list-item>
-    <md-icon>contacts</md-icon>
-    <a md-line routerLink="about">Contact</a>
-  </md-list-item>
-</md-nav-list>
+  <mat-list-item>
+    <mat-icon>contacts</mat-icon>
+    <a mat-line routerLink="about">Contact</a>
+  </mat-list-item>
+</mat-nav-list>

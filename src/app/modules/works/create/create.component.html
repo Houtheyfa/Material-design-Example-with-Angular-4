@@ -1,27 +1,27 @@
-<button md-raised-button color="primary" [mdMenuTriggerFor]="editorMenu">Change theme</button>
-<md-menu #editorMenu="mdMenu">
-  <button md-menu-item class="active" (click)="onChangeTheme('monokai')">Monokai</button>
-  <button md-menu-item (click)="onChangeTheme('eclipse')">Eclipse</button>
-  <button md-menu-item (click)="onChangeTheme('github')">Github</button>
-  <button md-menu-item (click)="onChangeTheme('solarized_dark')">Solarized Dark</button>
-  <button md-menu-item (click)="onChangeTheme('tomorrow')">Tomorrow</button>
-  <button md-menu-item (click)="onChangeTheme('sqlserver')">SqlServer</button>
-  <button md-menu-item (click)="onChangeTheme('textmate')">Textmate</button>
-</md-menu>
+<button mat-raised-button color="primary" [matMenuTriggerFor]="editorMenu">Change theme</button>
+<mat-menu #editorMenu="matMenu">
+  <button mat-menu-item class="active" (click)="onChangeTheme('monokai')">Monokai</button>
+  <button mat-menu-item (click)="onChangeTheme('eclipse')">Eclipse</button>
+  <button mat-menu-item (click)="onChangeTheme('github')">Github</button>
+  <button mat-menu-item (click)="onChangeTheme('solarized_dark')">Solarized Dark</button>
+  <button mat-menu-item (click)="onChangeTheme('tomorrow')">Tomorrow</button>
+  <button mat-menu-item (click)="onChangeTheme('sqlserver')">SqlServer</button>
+  <button mat-menu-item (click)="onChangeTheme('textmate')">Textmate</button>
+</mat-menu>
 
-<button md-raised-button color="primary" [mdMenuTriggerFor]="languageMenu">Change language</button>
-<md-menu #languageMenu="mdMenu">
-  <button md-menu-item class="active" (click)="onChangeLanguage(0)">Html Css Js</button>
-  <button md-menu-item class="active" (click)="onChangeLanguage(1)">Python</button>
-  <button md-menu-item class="active" (click)="onChangeLanguage(2)">C++</button>
-</md-menu>
+<button mat-raised-button color="primary" [matMenuTriggerFor]="languageMenu">Change language</button>
+<mat-menu #languageMenu="matMenu">
+  <button mat-menu-item class="active" (click)="onChangeLanguage(0)">Html Css Js</button>
+  <button mat-menu-item class="active" (click)="onChangeLanguage(1)">Python</button>
+  <button mat-menu-item class="active" (click)="onChangeLanguage(2)">C++</button>
+</mat-menu>
 
 
 <section class="row work-overview">
-  <md-tab-group *ngIf="language == 0" class="full-width" dynamicHeight="true">
+  <mat-tab-group *ngIf="language == 0" class="full-width" dynamicHeight="true">
 
-    <md-tab>
-      <ng-template md-tab-label>
+    <mat-tab>
+      <ng-template mat-tab-label>
         Html
       </ng-template>
       <div class="current-work">
@@ -33,10 +33,10 @@
           [readOnly]="false">
         </ace-editor>
       </div>
-    </md-tab>
+    </mat-tab>
 
-    <md-tab>
-      <ng-template md-tab-label>
+    <mat-tab>
+      <ng-template mat-tab-label>
         Css
       </ng-template>
       <div class="current-work">
@@ -48,11 +48,11 @@
           [readOnly]="false">
         </ace-editor>
       </div>
-    </md-tab>
+    </mat-tab>
 
 
-    <md-tab>
-      <ng-template md-tab-label>
+    <mat-tab>
+      <ng-template mat-tab-label>
         Javascript
       </ng-template>
       <div class="current-work">
@@ -64,13 +64,13 @@
           [readOnly]="false">
         </ace-editor>
       </div>
-    </md-tab>
-  </md-tab-group>
+    </mat-tab>
+  </mat-tab-group>
 
-  <md-tab-group *ngIf="language == 1" class="full-width" dynamicHeight="true">
+  <mat-tab-group *ngIf="language == 1" class="full-width" dynamicHeight="true">
 
-    <md-tab>
-      <ng-template md-tab-label>
+    <mat-tab>
+      <ng-template mat-tab-label>
         Python
       </ng-template>
       <div class="current-work">
@@ -82,12 +82,12 @@
           [readOnly]="false">
         </ace-editor>
       </div>
-    </md-tab>
-  </md-tab-group>
+    </mat-tab>
+  </mat-tab-group>
 
-  <md-tab-group *ngIf="language == 2" class="full-width" dynamicHeight="true">
-    <md-tab>
-      <ng-template md-tab-label>
+  <mat-tab-group *ngIf="language == 2" class="full-width" dynamicHeight="true">
+    <mat-tab>
+      <ng-template mat-tab-label>
         C/C++
       </ng-template>
       <div class="current-work">
@@ -99,6 +99,6 @@
           [readOnly]="false">
         </ace-editor>
       </div>
-    </md-tab>
-  </md-tab-group>
+    </mat-tab>
+  </mat-tab-group>
 </section>

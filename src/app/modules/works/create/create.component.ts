@@ -1,5 +1,5 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
-import {MdSnackBar} from '@angular/material';
+import {MatSnackBar} from '@angular/material';
 
 import 'brace';
 import 'brace/ext/language_tools';
@@ -26,7 +26,7 @@ export class CreateComponent implements OnInit {
 
   @ViewChild('editor') editor: ElementRef;
 
-  constructor(private snackBar: MdSnackBar) {}
+  constructor(private snackBar: MatSnackBar) {}
 
   ngOnInit() {
     setTimeout(() => {

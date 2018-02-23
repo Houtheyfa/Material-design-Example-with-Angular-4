@@ -1,25 +1,25 @@
-<md-toolbar>
-  <button class="full-height" md-button (click)="sidenav.toggle()">
-    <md-icon>menu</md-icon>
+<mat-toolbar>
+  <button class="full-height" mat-button (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
   </button>
 
   <span class="fill-remaining-space"></span>
   <form class="search-toolbar-form" #searchForm="ngForm">
-    <md-input-container *ngIf="showSearchBar" class="input-container" floatPlaceholder="never">
-      <input mdInput placeholder="search" type="search" name="searchInput" ngModel autofocus>
-    </md-input-container>
-    <button md-icon-button type="submit" color="primary" (click)="showSearchBar = !showSearchBar">
-      <md-icon>search</md-icon>
+    <mat-input-container *ngIf="showSearchBar" class="input-container" floatPlaceholder="never">
+      <input matInput placeholder="search" type="search" name="searchInput" ngModel autofocus>
+    </mat-input-container>
+    <button mat-icon-button type="submit" color="primary" (click)="showSearchBar = !showSearchBar">
+      <mat-icon>search</mat-icon>
     </button>
   </form>
 
-</md-toolbar>
-<md-progress-bar color="primary" mode="determinate" value="50"></md-progress-bar>
+</mat-toolbar>
+<mat-progress-bar color="primary" mode="determinate" value="50"></mat-progress-bar>
 
-<md-sidenav-container class="container">
-  <md-sidenav #sidenav class="sidenav" [opened]="sidenavOpened" align="start" [mode]="dynamicMode">
+<mat-sidenav-container class="container">
+  <mat-sidenav #sidenav class="sidenav" [opened]="sidenavOpened" align="start" [mode]="dynamicMode">
     <app-aside></app-aside>
-  </md-sidenav>
+  </mat-sidenav>
 
   <div class="content">
     <div class="main-content">
@@ -29,4 +29,4 @@
   </div>
 
 
-</md-sidenav-container>
+</mat-sidenav-container>

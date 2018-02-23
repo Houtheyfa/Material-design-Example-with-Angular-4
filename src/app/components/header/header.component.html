@@ -1,28 +1,27 @@
-<md-toolbar color="primary">
+<mat-toolbar color="primary">
   <img class="logo-img" src="assets/img/learnandcreate.png" alt="studen'TSE">
   <span>Learn&Create</span>
-  <button md-raised-button color="accent" style="margin-left: 10px;">
+  <button mat-raised-button color="accent" style="margin-left: 10px;">
     building
   </button>
   <span class="fill-remaining-space"></span>
 
   <div *ngIf="!onSmallScreen; else smallScreen">
-    <a md-button routerLink="feedback">
-      <md-icon>feedback</md-icon>
+    <a mat-button routerLink="feedback">
+      <mat-icon>feedback</mat-icon>
       <span>Feedback</span>
     </a>
-    <a md-button routerLink="auth">
-      <md-icon>account_circle</md-icon>
+    <a mat-button routerLink="auth">
+      <mat-icon>account_circle</mat-icon>
       <span>sign in</span>
     </a>
   </div>
   <ng-template #smallScreen>
-    <a md-icon-button routerLink="feedback">
-      <md-icon>feedback</md-icon>
+    <a mat-icon-button routerLink="feedback">
+      <mat-icon>feedback</mat-icon>
     </a>
-    <a md-icon-button routerLink="auth">
-      <md-icon>account_circle</md-icon>
+    <a mat-icon-button routerLink="auth">
+      <mat-icon>account_circle</mat-icon>
     </a>
   </ng-template>
-</md-toolbar>
-
+</mat-toolbar>

@@ -1,30 +1,30 @@
 import {NgModule} from '@angular/core';
 import {
-  MdButtonModule,
-  MdCardModule,
-  MdIconModule,
-  MdInputModule,
-  MdListModule, MdMenuModule, MdToolbarModule
+  MatButtonModule,
+  MatCardModule,
+  MatIconModule,
+  MatInputModule,
+  MatListModule, MatMenuModule, MatToolbarModule
 } from '@angular/material';
 
 @NgModule({
   imports: [
-    MdIconModule,
-    MdButtonModule,
-    MdCardModule,
-    MdInputModule,
-    MdListModule,
-    MdToolbarModule,
-    MdMenuModule
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule,
+    MatInputModule,
+    MatListModule,
+    MatToolbarModule,
+    MatMenuModule
   ],
   exports: [
-    MdIconModule,
-    MdButtonModule,
-    MdCardModule,
-    MdInputModule,
-    MdListModule,
-    MdToolbarModule,
-    MdMenuModule
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule,
+    MatInputModule,
+    MatListModule,
+    MatToolbarModule,
+    MatMenuModule
   ]
 })
 export class SharedMaterialModule {

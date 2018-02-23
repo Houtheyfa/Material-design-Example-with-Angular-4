@@ -1,16 +1,16 @@
 import {NgModule} from '@angular/core';
-import {MdTableModule, MdTabsModule} from '@angular/material';
-import {CdkTableModule} from '@angular/cdk';
+import {MatTableModule, MatTabsModule} from '@angular/material';
+import {CdkTableModule} from '@angular/cdk/table';
 
 @NgModule({
   imports: [
-    MdTabsModule,
-    MdTableModule,
+    MatTabsModule,
+    MatTableModule,
     CdkTableModule
   ],
   exports: [
-    MdTabsModule,
-    MdTableModule,
+    MatTabsModule,
+    MatTableModule,
     CdkTableModule
   ]
 })
